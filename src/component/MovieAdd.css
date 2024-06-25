@@ -1,0 +1,136 @@
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    background-color: #161b22;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #c9d1d9;
+  }
+  input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #888;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: #9b59b6;
+    box-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
+  }
+  textarea {
+    resize: none; /* Empêche le redimensionnement des zones de texte */
+  }
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  button:hover {
+    background-color: #8e44ad;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.6);
+  }
+  .result-container {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    background-color: #161b22;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  .result-container:hover {
+    transform: translateY(-5px);
+  }
+  .result-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .result-content p {
+    margin: 10px 0;
+  }
+  .result-section {
+    margin-bottom: 20px;
+  }
+  .result-section h3 {
+    margin-bottom: 10px;
+    color: #9b59b6;
+  }
+  small.obligatoire {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .error-label {
+    color: #9b59b6;
+  }
+  select#phoneCountry option {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 24px;
+  }
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+  }
+  /* Pour les navigateurs WebKit (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 8px; /* Largeur de la scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #161b22; /* Couleur de l'arrière-plan de la track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #9b59b6; /* Couleur de la thumb */
+    border-radius: 50%; /* Arrondir les coins */
+    border: 2px solid #161b22; /* Ajouter un bord pour une meilleure visibilité */
+  }
+  
+  /* Pour Firefox */
+  html {
+    scrollbar-width: thin; /* Largeur de la scrollbar */
+    scrollbar-color: #9b59b6 #161b22; /* Couleur de la thumb et de la track */
+  }
